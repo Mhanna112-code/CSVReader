@@ -1,0 +1,22 @@
+name: CSVParsingChecker
+  
+on: push
+  
+jobs: 
+ CSVParseCheck:
+    name: CSV parsing checker
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: actions/checkout@v2
+     
+      - name: runTestCase1
+        run: CSVParsingTest.java
+        
+      - name: runTestCase2
+        run: CSVParsingTest2.java
+        
+      - name: runTestCase3
+        run: CSVParsingTest3.java
+        
+      - name: runTestCase4
+        run: CSVParsingTest4.java
