@@ -12,6 +12,7 @@ jobs:
         with: 
           java-version: 1.8
         
-      - name: Run testcase 1
-        run: sudo ./CSVParsingTest.java
-        id: root
+      - name: compiler testcase 1
+        run: javac CSVParsingTest.java
+      - name: run testcase 1
+        run: java CSVParsingTest
