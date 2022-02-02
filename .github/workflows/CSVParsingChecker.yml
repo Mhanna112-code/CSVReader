@@ -12,7 +12,7 @@ jobs:
         with: 
           java-version: 1.8
         
-      - name: compiler testcase 1
-        run: javac CSVParsingTest.java
-      - name: run testcase 1
-        run: java CSVParsingTest
+      - name: compile helloworld
+        run: javac helloworld.java
+      - name: run helloworld
+        run: java helloworld
