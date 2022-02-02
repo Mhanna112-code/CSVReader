@@ -5,4 +5,6 @@ on: push
 jobs: 
  CSVParseCheck:
     name: CSV parsing checker
-    runs-on: ubuntu-latest
+    uses: Mhanna112-code/P1/.github/workflows/CVSParsingChecker.yml@main
+    with:
+      file: CSVParsingTest.java
