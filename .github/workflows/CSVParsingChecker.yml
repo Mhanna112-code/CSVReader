@@ -12,7 +12,7 @@ jobs:
         with: 
           java-version: 1.8
         
-      - name: compile helloworld
-        run: javac helloworld.java
-      - name: run helloworld
-        run: java helloworld
+      - name: compile helloWorld
+        run: javac helloWorld.java
+      - name: run helloWorld
+        run: java helloWorld
