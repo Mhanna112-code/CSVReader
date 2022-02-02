@@ -10,13 +10,13 @@ jobs:
       - uses: actions/checkout@v2
      
       - name: runTestCase1
-        run: CSVParsingTest.java
+        uses: CSVParsingTest.java@main
         
       - name: runTestCase2
-        run: CSVParsingTest2.java
+        uses: CSVParsingTest2.java@main
         
       - name: runTestCase3
-        run: CSVParsingTest3.java
+        uses: CSVParsingTest3.java@main
         
       - name: runTestCase4
-        run: CSVParsingTest4.java
+        uses: CSVParsingTest4.java@main
