@@ -11,8 +11,15 @@ jobs:
         uses: actions/setup-java@v1
         with: 
           java-version: 1.8
-        
-      - name: compile helloWorld
-        run: javac helloWorld.java
-      - name: run helloWorld
-        run: java helloWorld
+      - name: maven build
+        run: mvn -B package --file pom.xml
+      - name: Compile ReadCSV.java
+        run: javac CSVParsingTest.java
+        run: javac CSVParsing2Test.java
+        run: javac CSVParsing3Test.java
+        run: javac CSVParsing4Test.java
+      - name: Run ReadCSV
+        run: java CSVParsingTest test.csv
+        run: java CSVParsing2Test test.csv
+        run: java CSVParsing3Test test.csv
+        run: java CSVParsing4Test test.csv
